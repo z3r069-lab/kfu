@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Untitled Document.md</title><style></style></head><body id="preview">
+<p class="has-line-data" data-line-start="0" data-line-end="4"><strong>МИНИСТЕРСТВО НАУКИ  И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ</strong><br>
+<strong>Федеральное государственное автономное образовательное учреждение высшего образования</strong><br>
+<strong>“КРЫМСКИЙ ФЕДЕРАЛЬНЫЙ УНИВЕРСИТЕТ им. В. И. ВЕРНАДСКОГО”</strong><br>
+<strong>ФИЗИКО-ТЕХНИЧЕСКИЙ ИНСТИТУТ</strong></p>
+<p class="has-line-data" data-line-start="5" data-line-end="6">Кафедра компьютерной инженерии и моделирования</p>
+<h3 class="code-line" data-line-start=8 data-line-end=9 ><a id="____1_8"></a>Отчёт по лабораторной работе №1</h3>
+<p class="has-line-data" data-line-start="9" data-line-end="10"><strong>знакомство с visual C++</strong></p>
+<p class="has-line-data" data-line-start="11" data-line-end="14">по дисциплине “Программирование”<br>
+студента 1 курса группы ПИ - б - о - 191(2)<br>
+Квасов Устин Анатольевич</p>
+<p class="has-line-data" data-line-start="15" data-line-end="20">направления подготовки 09.03.04 “Программная инженерия”<br>
+Научный руководитель<br>
+старший преподаватель кафедры компьютерной инженерии и моделирования<br>
+(оценка)<br>
+Чабанов В.В.</p>
+<p class="has-line-data" data-line-start="21" data-line-end="22">Симферополь, 2019</p>
+<hr>
+<p class="has-line-data" data-line-start="24" data-line-end="57">1 чтобы создать новый проект нужно в верхнем списке открыть вкладку <em>файл</em><br>
+<img src="C:%5CUsers%5CLenovo%5CDesktop%5C%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8" alt="pic1" title="инфлаба.PNG"><br>
+1.1 в выпадающем списке выбрать создать -&gt; проект<br>
+1.2 в открывшемся окне выбрать тип приложения который нам нужен (консольное приложение)<br>
+<img src="C:%5CUsers%5CLenovo%5CDesktop%5C%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8" alt="pic2" title="инфлаба_1.PNG"><br>
+1.3 выбрать название проекта и директорию сохранения<br>
+1.4 готово<br>
+2 чтобы изменить цветовую тему нужно в верхнем списке открыть вкладку <em>средства</em><br>
+2.1 в выпадающем списке выпрать параметры<br>
+2.2 в открывшемся окне выбрать общие -&gt; цветовая тема<br>
+<img src="C:%5CUsers%5CLenovo%5CDesktop%5C%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8" alt="pic1" title="инфлаба_3.PNG"><br>
+2.3 готово<br>
+3 чтобы закомментировать/раскомментировать код средствами VS нужно<br>
+3.1 перед нужной частью поставить // для комментирования 1 строки<br>
+3.2 /* код /* для комментиррования блока кода<br>
+4 чтобы открыть папку окрываем <em>файл</em><br>
+<img src="C:%5CUsers%5CLenovo%5CDesktop%5C%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8" alt="pic1" title="инфлаба.PNG"><br>
+4.1 в выпадающем списке выбираем открыть -&gt; папку<br>
+4.2 проходим в репозиторий, где лежит проект<br>
+4.3 готово<br>
+5 при сохранении проекта VS использует расширение NAME.sln<br>
+6 чтобы запустить проект без отладки нужно<br>
+6.1 использовать комбинвцию клавиш <em>ctrl + F5</em><br>
+6.2 открыть в верхней панели отладка -&gt; запуск без отладки<br>
+<img src="C:%5CUsers%5CLenovo%5CDesktop%5C%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8" alt="pic4" title="инфлаба_4.PNG"><br>
+7 чтобы запустить проект в режиме отладки нужно<br>
+7.1 нажать F5<br>
+7.2 открыть в верхней панели отладка -&gt; запуск в режиме отладки<br>
+<img src="C:%5CUsers%5CLenovo%5CDesktop%5C%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8" alt="pic4" title="инфлаба_4.PNG"><br>
+8 чтобы вставить breakpoint нужно в нужном месте кода кликнуть ПКМ<br>
+8.1 в выпадающем окне выбрать точка останова -&gt; поставить точку<br>
+8.2 чтобы убрать точку нужно коикнуть ПКМ по красной точке и выбрать убрать точку<br>
+9 напишем простую программу</p>
+<pre><code class="has-line-data" data-line-start="58" data-line-end="67">#include &lt;iostream&gt;
+
+int main() {
+        int i;
+        i = 5;
+        std::cout &lt;&lt; i;
+        return 0;
+}
+</code></pre>
+<p class="has-line-data" data-line-start="67" data-line-end="73">9.1 поставим breakpoint на 5 и 6 стороке<br>
+9.2 при 1м breakpont(е) переменная i имеет значение -858993460<br>
+9.3 при 2м breakpont(е) переменная i имеет значение 5<br>
+10 сделаем тоже самое только изменим значение i c int на double тогда<br>
+10.1 при 1м breakpont(е) переменная i имеет значение -9.255963134931783е+61<br>
+10.2 при 2м breakpont(е) переменная i имеет значение 5.00000000</p>
+
+</body></html>
