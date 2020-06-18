@@ -1,0 +1,3 @@
+﻿  prog 4.cpp
+c:\users\cooler\source\repos\prog 4\prog 4\prog 4.cpp(9): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  prog 4.vcxproj -> c:\users\cooler\source\repos\prog 4\Debug\prog 4.exe
